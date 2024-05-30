@@ -12,12 +12,11 @@ int main(){
                 if (one * 1 + two * 2 + five * 5 == 10 * x)
                 {
                     printf("可以用%d个1角，%d个2角，%d个5角得到%d元\n", one, two, five, x);
-                }
-                
-           }
-           
+                    goto out;
+                }         
+           }             
         }
-        
     }
+out:
     return 0;
 }

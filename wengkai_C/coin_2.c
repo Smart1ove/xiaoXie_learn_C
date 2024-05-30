@@ -2,6 +2,7 @@
 
 int main(){
     int x;
+    int exit = 0;
     scanf("%d", &x);
     for (int one = 1; one < 10 * x; one++)
     {
@@ -12,12 +13,13 @@ int main(){
                 if (one * 1 + two * 2 + five * 5 == 10 * x)
                 {
                     printf("可以用%d个1角，%d个2角，%d个5角得到%d元\n", one, two, five, x);
-                }
-                
+                    exit = 1;
+                    break;
+                }         
            }
-           
+           if (exit) break;          
         }
-        
+        if (exit) break;
     }
     return 0;
 }
